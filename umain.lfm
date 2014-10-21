@@ -1,0 +1,38 @@
+object Form1: TForm1
+  Left = 1920
+  Height = 543
+  Top = 174
+  Width = 478
+  Caption = 'Form1'
+  ClientHeight = 543
+  ClientWidth = 478
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object btn_filldata: TButton
+    Left = 32
+    Height = 25
+    Top = 16
+    Width = 128
+    Caption = 'generate data'
+    OnClick = btn_filldataClick
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = btn_filldata
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 490
+    Top = 53
+    Width = 478
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 12
+    Caption = 'GroupBox1 - xyPlot'
+    TabOrder = 1
+  end
+end
